@@ -22,9 +22,7 @@ jobs:
       - name: 💿 Install Requirements                             
         run: pip install -r requirements.txt
       - name: 🍳 Update README
-        run: |
-          cd ${GITHUB_WORKSPACE}/src/
-          python main.py
+        run: python main.py
       - name: 🚀 Commit and push if it changed
         run: |
           git config user.name "${GITHUB_ACTOR}"
