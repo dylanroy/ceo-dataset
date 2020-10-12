@@ -21,7 +21,7 @@ jobs:
           python-version: '3.8'                                                   
       - name: 💿 Install Requirements                             
         run: pip install -r requirements.txt
-      - name: 🍳 Update README
+      - name: 🍳 Update dataset
         run: python main.py
       - name: 🚀 Commit and push if it changed
         run: |
